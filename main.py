@@ -1,22 +1,19 @@
 import sys
+import pprint
 
 from read_keywords import load_keywords
-from googlenews_search import search_data
-from save_data import save
+from googlenews_search import search_data as lib_search_data
+from google_api_search import search_data as api_search_data
+from save_data import save, save_api
 
 
 def main(filename):
     if not filename:
         raise Exception('The keywords filename is required!')
 
-    # load keywords
     keywords = load_keywords(filename)
-    # read data
-    
-    results = search_data(keywords)
-
-    # save data
-    save(results)
+    results = api_search_data(keywords)
+    # save(results)
 
 
 

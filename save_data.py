@@ -19,3 +19,21 @@ def save(results):
 
     
     wb.save('output.xls')
+
+
+def save_api(keyword, results):
+
+    wb = Workbook()
+
+    sheet1 = wb.add_sheet('Sheet 1')
+
+    i = 0
+    for r  in results['articles']:
+        sheet1.write(i, 0, keyword)
+        sheet1.write(i, 1, r['title'])
+        sheet1.write(i, 2, r['publishedAt'])
+        sheet1.write(i, 3, r['url'])
+        i += 1
+
+    wb.save('output.xls')
+

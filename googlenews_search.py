@@ -12,7 +12,7 @@ def search_data(keywords):
         googlenews.search(key)  
         key_result = []
 
-        while len(googlenews.results) < 5:
+        while len(googlenews.results) < 20:
             googlenews.getpage(2)
             sleep(randint(1,10))
 
