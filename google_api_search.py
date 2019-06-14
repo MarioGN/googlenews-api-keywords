@@ -1,8 +1,6 @@
-from pprint import pprint
 import requests
-
 from decouple import config
-from save_data import save_api
+from spreadsheets import save
 
 
 SECRET_KEY = config('SECRET_KEY')
@@ -18,6 +16,5 @@ def search_data(keywords):
 
         response = requests.get(url, params=parameters)
         response_json = response.json()
-        # return response_json
-        save_api(key, response_json)
-
+        
+        save(key, response_json)
