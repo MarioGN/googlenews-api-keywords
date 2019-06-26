@@ -1,6 +1,6 @@
 import requests
 from decouple import config
-from spreadsheets import save
+from spreadsheets import save_from_api as save
 
 
 SECRET_KEY = config('SECRET_KEY')
