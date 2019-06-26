@@ -1,0 +1,4 @@
+# SECRET_KEY=MY_KEY_ABC123!@#
+# KEYWORDS_FILE=keywords.xlsx
+# OUTPUT_FILE=output.xls
+# RESULT_NUMBER=100

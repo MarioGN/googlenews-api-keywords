@@ -34,5 +34,4 @@ def save(keyword, results):
 
         i += 1
 
-
     wb.save(workbook_name)

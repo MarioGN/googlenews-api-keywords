@@ -15,7 +15,7 @@ RESULT_NUMBER = config('RESULT_NUMBER', default='80', cast=int)
 
 
 def main():
-    # load keywords list form .xlsx file      
+    # load keywords list from .xlsx file      
     keywords = load_keywords(KEYWORDS_FILE)
 
     # init result file
