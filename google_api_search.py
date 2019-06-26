@@ -1,17 +1,17 @@
 import requests
 from decouple import config
-from spreadsheets import save_from_api as save
+from spreadsheets import save
 
 
-SECRET_KEY = config('SECRET_KEY')
 url = 'https://newsapi.org/v2/everything?'
 
-def search_data(keywords):
+
+def search_data(keywords, api_key, result_number):
     for key in keywords:
         parameters = {
             'q': key, 
-            'pageSize': 5,  
-            'apiKey': SECRET_KEY 
+            'pageSize': result_number,  
+            'apiKey': api_key, 
         }
 
         response = requests.get(url, params=parameters)

@@ -14,6 +14,7 @@ def load_keywords(filename):
             if key == 'Keywords':
                 continue
             keywords.append(key)
+
     except FileNotFoundError:
         print('No such file or directory: "{}" '.format(filename))
 
