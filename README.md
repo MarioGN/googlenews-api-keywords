@@ -13,7 +13,7 @@
 
 ```console
 git clone git@github.com:MarioGN/googlenews-api-keywords.git googlenews
-cd google
+cd googlenews
 virtualenv -p python3.7 venv
 source venv/bin/activate
 pip install -r requirements.txt
