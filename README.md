@@ -1,4 +1,4 @@
-# Google api search
+# Google News API search keywords
 
 ## How to use?
 
@@ -11,12 +11,14 @@
 7. Configure API key
 8. Run the script.
 
-'''console
+```console
 git clone git@github.com:MarioGN/googlenews-scrap.git google
 cd google
 virtualenv -p python3.7 venv
 source venv/bin/activate
 pip install -r requirements.txt
 cp env-sample .env
+# place the keywords file
+# configure API KEY
 python main.py
-'''
+```
