@@ -12,7 +12,7 @@
 8. Run the script.
 
 ```console
-git clone git@github.com:MarioGN/googlenews-scrap.git google
+git clone git@github.com:MarioGN/googlenews-api-keywords.git googlenews
 cd google
 virtualenv -p python3.7 venv
 source venv/bin/activate

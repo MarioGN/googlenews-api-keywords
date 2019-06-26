@@ -8,6 +8,7 @@ url = 'https://newsapi.org/v2/everything?'
 
 def search_data(keywords, api_key, result_number):
     for key in keywords:
+        print('keyword: {}...'.format(key))
         parameters = {
             'q': key, 
             'pageSize': result_number,  
